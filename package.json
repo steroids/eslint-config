@@ -1,6 +1,6 @@
 {
   "name": "@steroidsjs/eslint-config",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "",
   "author": "Vladimir Kozhin <hello@kozhindev.com>",
   "main": "index.js",
@@ -16,7 +16,7 @@
   "peerDependencies": {
     "eslint": "^7.20.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "eslint-config-airbnb": "18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
