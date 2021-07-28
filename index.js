@@ -74,7 +74,9 @@ module.exports = {
                 "code": 120,
                 "tabWidth": 4
             }
-        ]
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
     },
     "parserOptions": {
         "ecmaFeatures": {
