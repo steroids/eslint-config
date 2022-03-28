@@ -23,6 +23,7 @@ module.exports = {
             }
         ],
         "arrow-parens": "off",
+        "curly": ["error"],
         "object-curly-spacing": "off",
         "spaced-comment": "off",
         "no-confusing-arrow": "off",
@@ -47,6 +48,12 @@ module.exports = {
         "react/button-has-type": "off",
         "prefer-template": "off",
         "react/require-default-props": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "import/prefer-default-export": "off",
+        "no-useless-constructor": "off",
+        "class-methods-use-this": "off",
+        "no-await-in-loop": "off",
+        "no-restricted-syntax": "off",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}],
         "react-hooks/exhaustive-deps": ["warn", {
             "additionalHooks": "^use(Async|AsyncFn|AsyncRetry|Debounce|UpdateEffect|IsomorphicLayoutEffect|DeepCompareEffect|ShallowCompareEffect)$"
@@ -71,7 +78,7 @@ module.exports = {
         "max-len": [
             "error",
             {
-                "code": 120,
+                "code": 150,
                 "tabWidth": 4
             }
         ],
