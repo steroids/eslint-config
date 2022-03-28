@@ -15,6 +15,7 @@ module.exports = {
         "es6": true
     },
     "rules": {
+        "linebreak-style": 0,
         "indent": [
             "warn",
             4,
