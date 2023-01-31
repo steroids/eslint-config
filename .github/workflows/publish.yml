@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v1
       - uses: JS-DevTools/npm-publish@v1
         with:
-          package: ./dist/package.json
+          package: ./package.json
           token: ${{ secrets.NPM_TOKEN }}
