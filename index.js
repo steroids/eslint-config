@@ -1,21 +1,21 @@
 module.exports = {
     "extends": [
         "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "airbnb",
         "airbnb/hooks",
-        "plugin:@typescript-eslint/recommended"
     ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
     "globals": {
         "__": true
     },
-    "parser": "@typescript-eslint/parser",
     "env": {
         "browser": true,
         "node": true,
         "es6": true
     },
     "rules": {
-        "linebreak-style": 0,
         "indent": [
             "warn",
             4,
@@ -84,7 +84,8 @@ module.exports = {
             }
         ],
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": "error"
+        "@typescript-eslint/no-shadow": "error",
+        "linebreak-style": "off",
     },
     "parserOptions": {
         "ecmaFeatures": {
