@@ -20,7 +20,12 @@ module.exports = {
             "warn",
             4,
             {
-                "SwitchCase": 1
+                "SwitchCase": 1,
+                "ignoredNodes": [
+                    "FunctionExpression > .params[decorators.length > 0]",
+                    "FunctionExpression > .params > :matches(Decorator, :not(:first-child))",
+                    "ClassBody.body > PropertyDefinition[decorators.length > 0] > .key"
+                ]
             }
         ],
         "arrow-parens": "off",
@@ -86,6 +91,11 @@ module.exports = {
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": "error",
         "linebreak-style": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@angular-eslint/no-empty-lifecycle-method": "off",
     },
     "parserOptions": {
         "ecmaFeatures": {
