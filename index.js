@@ -30,7 +30,7 @@ module.exports = {
         ],
         "arrow-parens": "off",
         "curly": ["error"],
-        "object-curly-spacing": "off",
+        "object-curly-spacing": ["error", "never"],
         "spaced-comment": "off",
         "no-confusing-arrow": "off",
         "@typescript-eslint/no-explicit-any": "off",
