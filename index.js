@@ -29,7 +29,7 @@ module.exports = {
             }
         ],
         "arrow-parens": "off",
-        "curly": ["error"],
+        "curly": ["error", "all"],
         "object-curly-spacing": ["error", "never"],
         "spaced-comment": "off",
         "no-confusing-arrow": "off",
@@ -52,6 +52,8 @@ module.exports = {
         "no-alert": "off",
         "object-curly-newline": "off",
         "react/button-has-type": "off",
+        "react/jsx-max-props-per-line": ["error", { "when": "always" }],
+        "react/jsx-key": ["error"],
         "prefer-template": "off",
         "react/require-default-props": "off",
         "jsx-a11y/anchor-is-valid": "off",
