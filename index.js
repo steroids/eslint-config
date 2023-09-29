@@ -98,6 +98,12 @@ module.exports = {
         "no-empty-function": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@angular-eslint/no-empty-lifecycle-method": "off",
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": false
+            }
+        ],
     },
     "parserOptions": {
         "ecmaFeatures": {
