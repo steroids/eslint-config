@@ -104,6 +104,27 @@ module.exports = {
                 "allowAllPropertiesOnSameLine": false
             }
         ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "error"
+                ]
+            }
+        ],
+        "@typescript-eslint/member-delimiter-style": [
+            "error",
+            {
+                "multiline": {
+                    "delimiter": "comma",
+                    "requireLast": true
+                },
+                "singleline": {
+                    "delimiter": "comma",
+                    "requireLast": true
+                }
+            }
+        ]
     },
     "parserOptions": {
         "ecmaFeatures": {
