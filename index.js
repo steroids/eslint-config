@@ -125,7 +125,10 @@ module.exports = {
                     "requireLast": true
                 }
             }
-        ]
+        ],
+        'file-match-folder': [
+            'error',
+        ],
     },
     "parserOptions": {
         "ecmaFeatures": {
