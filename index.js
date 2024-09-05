@@ -28,6 +28,7 @@ module.exports = {
                 ]
             }
         ],
+        "no-inline-comments": "on",
         "arrow-parens": "off",
         "curly": ["error", "all"],
         "object-curly-spacing": ["error", "never"],
