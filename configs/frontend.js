@@ -11,17 +11,14 @@ module.exports = {
         "browser": true,
     },
     "rules": {
-        "no-inline-comments": "on",
         "react/destructuring-assignment": "off",
         "react/jsx-props-no-spreading": "off",
         "jsx-quotes": ["off", "prefer-single"],
         "react/no-array-index-key": "off",
         "no-alert": "off",
-        "object-curly-newline": "off",
         "react/button-has-type": "off",
         "react/jsx-max-props-per-line": ["error", { "when": "always" }],
         "react/jsx-key": ["error"],
-        "prefer-template": "off",
         "react/require-default-props": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}],
@@ -45,7 +42,6 @@ module.exports = {
                 ]
             }
         ],
-        "@typescript-eslint/no-unused-vars": "off",
         "@angular-eslint/no-empty-lifecycle-method": "off",
     },
 };

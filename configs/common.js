@@ -22,6 +22,7 @@ module.exports = {
                 ]
             }
         ],
+        "prettier/prettier": "error",
         "arrow-parens": "off",
         "curly": ["error", "all"],
         "object-curly-spacing": ["error", "never"],
@@ -69,7 +70,11 @@ module.exports = {
         "@typescript-eslint/no-shadow": "error",
         "no-shadow": "off",
         "no-useless-constructor": "off",
+        "no-inline-comments": "on",
         "import/prefer-default-export": "off",
+        "object-curly-newline": "off",
+        "prefer-template": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/member-delimiter-style": [
             "error",
             {
@@ -81,6 +86,20 @@ module.exports = {
                     "delimiter": "comma",
                     "requireLast": true
                 }
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index"
+                ],
+                "newlines-between": "never"
             }
         ],
     },
