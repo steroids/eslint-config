@@ -9,7 +9,4 @@ module.exports = {
             { "argsIgnorePattern": "^_" }
         ]
     },
-    "ignorePatterns": [
-        "src/**/migrations/*.ts"
-    ],
 };

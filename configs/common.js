@@ -46,7 +46,6 @@ module.exports = {
         "no-nested-ternary": "off",
         "no-param-reassign": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
-        "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.ts"] }],
         "no-await-in-loop": "off",
         "no-restricted-syntax": "off",
         "class-methods-use-this": "off",

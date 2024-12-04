@@ -21,7 +21,6 @@ module.exports = {
         "react/jsx-key": ["error"],
         "react/require-default-props": "off",
         "jsx-a11y/anchor-is-valid": "off",
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}],
         "react-hooks/exhaustive-deps": ["warn", {
             "additionalHooks": "^use(Async|AsyncFn|AsyncRetry|Debounce|UpdateEffect|IsomorphicLayoutEffect|DeepCompareEffect|ShallowCompareEffect)$"
         }],
