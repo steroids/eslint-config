@@ -5,7 +5,8 @@
   "author": "Vladimir Kozhin <hello@kozhindev.com>",
   "exports": {
     "./frontend": "./configs/frontend.js",
-    "./backend": "./configs/backend.js"
+    "./backend": "./configs/backend.js",
+    ".": "./index.js"
   },
   "repository": {
     "type": "git",
