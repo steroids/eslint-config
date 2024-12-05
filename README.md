@@ -6,9 +6,23 @@
 
 Проекты подтягивают этот репозиторий через npm-зависимость.
 
-Cсылка на конфиг прописывается в `.eslintrc` проекта:
+Ссылка на конфиг прописывается в `.eslintrc` проекта
+
+Для фронтенда:
 ```json
 {
-    "extends": "@steroidsjs/eslint-config"
+    "extends": "@steroidsjs/eslint-config/frontend"
 }
+```
+
+Для бэкенда:
+```json
+{
+    "extends": "@steroidsjs/eslint-config/backend"
+}
+```
+
+При использовании старого пути `@steroidsjs/eslint-config` вы будете получать ошибку:
+```
+The path '@steroidsjs/eslint-config' is no longer supported. Use '@steroidsjs/eslint-config/frontend' for frontend or '@steroidsjs/eslint-config/backend' for backend.
 ```
