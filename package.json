@@ -3,7 +3,11 @@
   "version": "2.2.0",
   "description": "",
   "author": "Vladimir Kozhin <hello@kozhindev.com>",
-  "main": "index.js",
+  "exports": {
+    "./frontend": "./configs/frontend.js",
+    "./backend": "./configs/backend.js",
+    ".": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/steroids/eslint-config"
