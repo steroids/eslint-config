@@ -4,7 +4,7 @@ module.exports = {
     meta: {
         type: 'suggestion',
         docs: {
-            description: 'Require a enum for each helper class',
+            description: 'The rule requires a corresponding enum for each class inheriting BaseEnum from @steroidsjs/nest/domain/base/BaseEnum.',
         },
         messages: {
             missingEnum: 'Helper class "{{ helperName }}" requires a corresponding enum.',
