@@ -69,7 +69,7 @@ module.exports = {
         "@typescript-eslint/no-shadow": "error",
         "no-shadow": "off",
         "no-useless-constructor": "off",
-        "no-inline-comments": "on",
+        "no-inline-comments": "error",
         "import/prefer-default-export": "off",
         "object-curly-newline": "off",
         "prefer-template": "off",
