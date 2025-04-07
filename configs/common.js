@@ -3,6 +3,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
     ],
+    "ignorePatterns": ["eslint*", ".eslint*"],
     "parser": "@typescript-eslint/parser",
     "plugins": ["@typescript-eslint"],
     "env": {
@@ -103,6 +104,7 @@ module.exports = {
         ],
     },
     "parserOptions": {
+        "project": "./tsconfig.json",
         "ecmaFeatures": {
             "legacyDecorators": true
         }
