@@ -1,8 +1,8 @@
 module.exports = {
     "extends": [
-        "./common.js",
         "airbnb",
         "airbnb/hooks",
+        "./common.js"
     ],
     "globals": {
         "__": true

@@ -1,7 +1,7 @@
 module.exports = {
     "extends": [
-        "./common.js",
-        "airbnb-base"
+        "airbnb-base",
+        "./common.js"
     ],
     "rules": {
         "@typescript-eslint/no-unused-vars": [
