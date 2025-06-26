@@ -3,7 +3,9 @@ module.exports = {
         "airbnb-base",
         "./common.js"
     ],
+    "plugins":["steroidsjs-backend"],
     "rules": {
+        "steroidsjs-backend/required-enum-to-helper": "error",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {"argsIgnorePattern": "^_"}
