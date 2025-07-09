@@ -1,14 +1,58 @@
+const fs = require("fs");
+const path = require("path");
+
+function getProjectSrcPath(srcDir = "src") {
+    // cwd — это корень проекта, не этой библиотеки
+    return path.resolve(process.cwd(), srcDir);
+}
+
+function generateInternalFoldersRegex(srcRoot = "src") {
+    const fullSrcPath = getProjectSrcPath(srcRoot);
+    if (!fs.existsSync(fullSrcPath)) {
+        return '^src/';
+    }
+
+    const folders = fs.readdirSync(fullSrcPath, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => dirent.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); // escape regex
+
+    return `^(${folders.join('|')})(/|$)`;
+}
+
+function generateSinglePathGroup(srcRoot = "src") {
+    const fullSrcPath = getProjectSrcPath(srcRoot);
+    if (!fs.existsSync(fullSrcPath)) return [];
+
+    const folders = fs.readdirSync(fullSrcPath, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => dirent.name);
+
+    return [{
+        pattern: `{${folders.join(',')}}/**`,
+        group: "internal",
+        position: "after",
+    }];
+}
+
+const pathGroups = generateSinglePathGroup();
+const internalRegex = generateInternalFoldersRegex();
+
 module.exports = {
     "extends": [
         "airbnb",
         "airbnb/hooks",
-        "./common.js"
+        "plugin:css-import-order/recommended",
+        "./common.js",
     ],
+    "plugins": ["css-import-order"],
     "globals": {
         "__": true
     },
     "env": {
         "browser": true,
+    },
+    "settings": {
+        'import/internal-regex': internalRegex,
     },
     "rules": {
         "react/destructuring-assignment": "off",
@@ -42,5 +86,24 @@ module.exports = {
             }
         ],
         "@angular-eslint/no-empty-lifecycle-method": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/order": [
+                "error",
+                {
+                    "groups": [
+                        "external",
+                        "internal",
+                        ["sibling", "parent"],
+                        "index"
+                    ],
+                    "pathGroups": pathGroups,
+                    "pathGroupsExcludedImportTypes": [],
+                    'newlines-between': 'always',
+                    "alphabetize": {
+                        "order": "asc",
+                        "caseInsensitive": false
+                    }
+                }
+            ],
     },
 };

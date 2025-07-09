@@ -29,6 +29,20 @@ module.exports = {
                             "match": false,
                         },
                         "suffix": ["Token"],
+                    },
+                ],
+                 "import/order": [
+                    "error",
+                    {
+                        "groups": [
+                            "builtin",
+                            "external",
+                            "internal",
+                            "parent",
+                            "sibling",
+                            "index"
+                        ],
+                        "newlines-between": "never"
                     }
                 ],
             },
