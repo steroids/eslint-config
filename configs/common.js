@@ -89,20 +89,6 @@ module.exports = {
                 }
             }
         ],
-        "import/order": [
-            "error",
-            {
-                "groups": [
-                    "builtin",
-                    "external",
-                    "internal",
-                    "parent",
-                    "sibling",
-                    "index"
-                ],
-                "newlines-between": "never"
-            }
-        ],
     },
     "parserOptions": {
         "project": "./tsconfig.json",
