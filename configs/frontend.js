@@ -8,7 +8,9 @@ function getProjectSrcPath(srcDir = "src") {
 
 function generateInternalFoldersRegex(srcRoot = "src") {
     const fullSrcPath = getProjectSrcPath(srcRoot);
-    if (!fs.existsSync(fullSrcPath)) return '^src/';
+    if (!fs.existsSync(fullSrcPath)) {
+        return '^src/';
+    }
 
     const folders = fs.readdirSync(fullSrcPath, { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
