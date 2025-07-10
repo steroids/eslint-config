@@ -2,11 +2,10 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
     ],
     "ignorePatterns": ["eslint*", ".eslint*"],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint",  "prettier"],
+    "plugins": ["@typescript-eslint"],
     "env": {
         "node": true,
         "es6": true
@@ -24,7 +23,6 @@ module.exports = {
                 ]
             }
         ],
-        "prettier/prettier": "error",
         "arrow-parens": "off",
         "curly": ["error", "all"],
         "object-curly-spacing": ["error", "never"],

@@ -1,13 +1,16 @@
 module.exports = {
     "extends": [
         "airbnb-base",
+        "prettier",
         "./common.js"
     ],
+    "plugins": ["prettier"],
     "rules": {
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {"argsIgnorePattern": "^_"}
         ],
+        "prettier/prettier": "error",
     },
     "overrides": [
         {
