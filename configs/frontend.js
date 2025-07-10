@@ -57,7 +57,8 @@ module.exports = {
     "rules": {
         "react/destructuring-assignment": "off",
         "react/jsx-props-no-spreading": "off",
-        "jsx-quotes": ["off", "prefer-single"],
+        "jsx-quotes": ["warn", "prefer-double"],
+        "quotes": ["warn", "double", { "avoidEscape": true }],
         "react/no-array-index-key": "off",
         "no-alert": "off",
         "react/button-has-type": "off",
