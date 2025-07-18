@@ -906,11 +906,6 @@ eslint-plugin-react@^7.32.2:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.10"
 
-eslint-plugin-steroidsjs-backend@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-steroidsjs-backend/-/eslint-plugin-steroidsjs-backend-1.0.0.tgz#a59751f117ae9f7da364e691fb9e064518808e6b"
-  integrity sha512-0g0C46mMgdUcvkeX0rdCLhYaOpSi2bbC5Ras6y9+UWwY4KGL+Mg/WE8r8LHzW7sovJhR6wz3zPTGsKDgwL1TtA==
-
 eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
