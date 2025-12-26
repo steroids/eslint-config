@@ -44,7 +44,7 @@ module.exports = {
         "plugin:css-import-order/recommended",
         "./common.js",
     ],
-    "plugins": ["css-import-order"],
+    "plugins": ["css-import-order","unused-imports"],
     "globals": {
         "__": true
     },
@@ -106,5 +106,15 @@ module.exports = {
                     }
                 }
             ],
+        "unused-imports/no-unused-imports": "warn",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^(?:_|bem)$",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ]
     },
 };
