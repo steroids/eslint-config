@@ -88,23 +88,29 @@ module.exports = {
         ],
         "@angular-eslint/no-empty-lifecycle-method": "off",
         "react/react-in-jsx-scope": "off",
+        "object-curly-newline": ["error", {
+            "ObjectExpression": {
+                "consistent": true,
+                "minProperties": 1
+            }
+        }],
         "import/order": [
-                "error",
-                {
-                    "groups": [
-                        "external",
-                        "internal",
-                        ["sibling", "parent"],
-                        "index"
-                    ],
-                    "pathGroups": pathGroups,
-                    "pathGroupsExcludedImportTypes": [],
-                    'newlines-between': 'always',
-                    "alphabetize": {
-                        "order": "asc",
-                        "caseInsensitive": false
-                    }
+            "error",
+            {
+                "groups": [
+                    "external",
+                    "internal",
+                    ["sibling", "parent"],
+                    "index"
+                ],
+                "pathGroups": pathGroups,
+                "pathGroupsExcludedImportTypes": [],
+                'newlines-between': 'always',
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": false
                 }
-            ],
+            }
+        ],
     },
 };
