@@ -88,6 +88,12 @@ module.exports = {
         ],
         "@angular-eslint/no-empty-lifecycle-method": "off",
         "react/react-in-jsx-scope": "off",
+        "object-curly-newline": ["error", {
+            "ObjectExpression": {
+                "consistent": true,
+                "minProperties": 1
+            }
+        }],
         "import/order": [
                 "error",
                 {
