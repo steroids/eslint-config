@@ -95,23 +95,23 @@ module.exports = {
             }
         }],
         "import/order": [
-                "error",
-                {
-                    "groups": [
-                        "external",
-                        "internal",
-                        ["sibling", "parent"],
-                        "index"
-                    ],
-                    "pathGroups": pathGroups,
-                    "pathGroupsExcludedImportTypes": [],
-                    'newlines-between': 'always',
-                    "alphabetize": {
-                        "order": "asc",
-                        "caseInsensitive": false
-                    }
+            "error",
+            {
+                "groups": [
+                    "external",
+                    "internal",
+                    ["sibling", "parent"],
+                    "index"
+                ],
+                "pathGroups": pathGroups,
+                "pathGroupsExcludedImportTypes": [],
+                'newlines-between': 'always',
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": false
                 }
-            ],
+            }
+        ],
         "unused-imports/no-unused-imports": "warn",
         "unused-imports/no-unused-vars": [
             "warn",
