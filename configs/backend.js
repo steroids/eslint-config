@@ -4,8 +4,9 @@ module.exports = {
         "prettier",
         "./common.js"
     ],
-    "plugins": ["prettier"],
+    "plugins":["prettier", "@steroidsjs/backend"],
     "rules": {
+        "@steroidsjs/backend/required-enum-to-helper": "error",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {"argsIgnorePattern": "^_"}
