@@ -107,6 +107,11 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
+"@steroidsjs/eslint-plugin-backend@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/eslint-plugin-backend/-/eslint-plugin-backend-1.0.0.tgz#0d207829717ed0738948190cad65b556806ac91d"
+  integrity sha512-YkyGwgVVTy8JIXlBfF8C6F4oPIgyg1GvQDnmFQY2o1T91VNCnLCzSg6G+s8+M+NfEnwYdWTtJH74J/r21DqtMg==
+
 "@types/json-schema@^7.0.9":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"

@@ -4,10 +4,10 @@ module.exports = {
         "prettier",
         "./common.js"
     ],
-    "plugins":["prettier", "steroidsjs-backend"],
+    "plugins":["prettier", "@steroidsjs/backend"],
     "rules": {
-        "steroidsjs-backend/required-enum-to-helper": "error",
-        "steroidsjs-backend/required-enum-field-enum-name": "warn",
+        "@steroidsjs/backend/required-enum-to-helper": "error",
+        "@steroidsjs/backend/required-enum-field-enum-name": "warn",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {"argsIgnorePattern": "^_"}

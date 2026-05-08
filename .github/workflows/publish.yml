@@ -1,11 +1,16 @@
 name: NPM Publish
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
-      - uses: actions/checkout@v1
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: actions/checkout@v6
+      - uses: JS-DevTools/npm-publish@v4
         with:
           package: ./package.json
-          token: ${{ secrets.NPM_TOKEN }}
