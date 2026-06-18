@@ -44,6 +44,7 @@ module.exports = {
         "no-underscore-dangle": "off",
         "@typescript-eslint/no-var-requires": "off",
         "no-nested-ternary": "off",
+        "multiline-ternary": ["error", "always"],
         "no-param-reassign": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
         "no-await-in-loop": "off",
