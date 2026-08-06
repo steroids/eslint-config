@@ -1,10 +1,9 @@
 module.exports = {
     "extends": [
         "airbnb-base",
-        "prettier",
         "./common.js"
     ],
-    "plugins":["prettier", "@steroidsjs/backend"],
+    "plugins":["@steroidsjs/backend"],
     "rules": {
         "@steroidsjs/backend/required-enum-to-helper": "error",
         "@steroidsjs/backend/required-enum-field-enum-name": "warn",
@@ -12,7 +11,6 @@ module.exports = {
             "warn",
             {"argsIgnorePattern": "^_"}
         ],
-        "prettier/prettier": "error",
     },
     "overrides": [
         {
