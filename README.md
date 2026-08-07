@@ -30,3 +30,7 @@ The path '@steroidsjs/eslint-config' is no longer supported. Use '@steroidsjs/es
 ### ⚠️ Миграция для фронтенда
 
 **[Руководство по миграции для фронтенда](MIGRATION_GUIDE_FRONTEND.md)**
+
+### ⚠️ Миграция для бэкенда
+
+**[Руководство по миграции для бэкенда](MIGRATION_GUIDE_BACKEND.md)**
