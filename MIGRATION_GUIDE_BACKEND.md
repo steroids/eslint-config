@@ -1,6 +1,6 @@
 # Migration Guide для backend
 
-## Unreleased
+## 4.0.0 (2026-08-10)
 
 ### Удаление Prettier
 
