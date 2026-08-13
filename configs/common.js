@@ -42,7 +42,6 @@ module.exports = {
         ],
         "global-require": "off",
         "no-underscore-dangle": "off",
-        "@typescript-eslint/no-var-requires": "off",
         "no-nested-ternary": "off",
         "no-param-reassign": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
@@ -74,7 +73,7 @@ module.exports = {
         "object-curly-newline": "off",
         "prefer-template": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/member-delimiter-style": [
+        "@stylistic/member-delimiter-style": [
             "error",
             {
                 "multiline": {
