@@ -5,7 +5,10 @@ module.exports = {
     ],
     "ignorePatterns": ["eslint*", ".eslint*"],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
+    "plugins": [
+        "@typescript-eslint",
+        "@stylistic"
+    ],
     "env": {
         "node": true,
         "es6": true
