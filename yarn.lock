@@ -93,10 +93,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@steroidsjs/eslint-plugin-backend@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@steroidsjs/eslint-plugin-backend/-/eslint-plugin-backend-1.1.0.tgz#152d9063847a1f099651b9d7756c7287881d0747"
-  integrity sha512-GGfI39Euc3H6NqsRqCXVI7Me2u2K+85e1oFZTbyPUfKHWnic+NTW8cae5qmXGnpYfVmbFAs+9FTokZ1cx6epxw==
+"@steroidsjs/eslint-plugin-backend@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@steroidsjs/eslint-plugin-backend/-/eslint-plugin-backend-1.2.0.tgz#2f2dca17a3281c5ccc0d664ad190c4405f681c97"
+  integrity sha512-MNs9CNTYhswEb3ZYnVxQc5Jch4IPPL5+tpIxfCLR/N6hLWj/8n2iKoJCC/3cr2zxPw5OTpHMA0b7Hg0IP15rXA==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
