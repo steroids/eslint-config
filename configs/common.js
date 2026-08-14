@@ -89,6 +89,12 @@ module.exports = {
                 }
             }
         ],
+        "@stylistic/newline-per-chained-call": [
+            "warn",
+            {
+                "ignoreChainWithDepth": 1
+            }
+        ],
     },
     "parserOptions": {
         "project": "./tsconfig.json",
