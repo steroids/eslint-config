@@ -46,6 +46,7 @@ module.exports = {
         "global-require": "off",
         "no-underscore-dangle": "off",
         "no-nested-ternary": "off",
+        "multiline-ternary": ["error", "always"],
         "no-param-reassign": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
         "no-await-in-loop": "off",
